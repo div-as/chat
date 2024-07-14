@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-color: #F2E2CE;
+}
+
+:root {
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    width: 100%;
+    max-width: 330px;
+    background-color: #F6FCFB;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.login > h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login__input {
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 0 8px rgba(0, 0, 0.1, 0.2);
+    outline: none;
+}
+
+.login__input:focus {
+    outline: 2px solid #f2f2f2
+}
+
+.login__button {
+    background-color: #f48fb1;
+    color: #06254C;
+    padding: 8px 20px; /* Diminui o padding para tornar o botão menor */
+    border-radius: 20px; /* Ajusta o border-radius para manter a aparência arredondada */
+    cursor: pointer;
+    font-size: 16px; /* Diminui o tamanho da fonte */
+    border: 1px solid #F5C481;
+    font-weight: bold;
+}
+
+.login__button:hover {
+    background-color: #ec407a;
+}
+
+.chat {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+.chat__messages {
+    flex-grow: 1;
+    padding: 30px 30px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.chat__form {
+    background-color: #fadfbd;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.chat__input {
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    flex-grow: 1;
+    background-color: #F6FCFB;
+    outline: none;
+    font-size: 1rem;
+}
+
+.chat__button {
+    border: none;
+    background: none;
+    color: #F6FCFB;
+    cursor: pointer;
+}
+
+.chat__button > span {
+    font-size: 1.8rem;
+}
+
+.chat__messages > div {
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+
+.message--self {
+    background-color: #F5C481;
+    border-radius: 10px 10px 0 10px;
+    align-self: flex-end;
+}
+
+.message--other {
+    background-color: #ff82ac;
+    border-radius: 10px 10px 10px 0;
+    align-self: flex-start;
+}
+
+.message--sender {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color:aliceblue;
+}
